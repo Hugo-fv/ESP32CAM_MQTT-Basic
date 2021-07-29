@@ -18,19 +18,19 @@
 #include <PubSubClient.h> //Biblioteca para conexion MQTT
 
 //Datos de WiFi
-const char* ssid = "nombre_de_red";  // Aquí debes poner el nombre de tu red
-const char* password = "11223344";  // Aquí debes poner la contraseña de tu red
+const char* ssid = "ARRIS-EA22";  // Aquí debes poner el nombre de tu red
+const char* password = "220300sofia";  // Aquí debes poner la contraseña de tu red
 
 //Datos del broker MQTT
-const char* mqtt_server = "192.168.1.100"; // Si estas en una red local, coloca la IP asignada, en caso contrario, coloca la IP publica
-IPAddress server(192,168,1,100);
+const char* mqtt_server = "192.168.0.12"; // Si estas en una red local, coloca la IP asignada, en caso contrario, coloca la IP publica
+IPAddress server(192, 168, 0, 12);
 
 // Objetos
 WiFiClient espClient; // Este objeto maneja los datos de conexion WiFi
 PubSubClient client(espClient); // Este objeto maneja los datos de conexion al broker
 
 // Variables
-int flasflashLedPin = 33;  // Para indicar el estatus de conexión
+int flashLedPin = 33;  // Para indicar el estatus de conexión
 int statusLedPin = 4; // Para ser controlado por MQTT
 long timeNow, timeLast; // Variables de control de tiempo no bloqueante
 int data = 0; // Contador
@@ -50,7 +50,7 @@ void setup() {
   Serial.print("Conectar a ");
   Serial.println(ssid);
  
-  WiFi.begin(ssid, password); // Esta es la función que realiz la conexión a WiFi
+  WiFi.begin(ssid, password); // Esta es la función que realiza la conexión a WiFi
  
   while (WiFi.status() != WL_CONNECTED) { // Este bucle espera a que se realice la conexión
     digitalWrite (flashLedPin, HIGH);
