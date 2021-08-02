@@ -42,7 +42,9 @@ Sigue los siguientes pasos para que funcione.
 
 Carga el _flow_ a Node-Red.
 ![](https://github.com/Hugo-fv/ESP32CAM_MQTT-Basic/blob/main/Images/FLOW.png)
+
 Verifica que el Broker está funcionando.
+
 
 Compila y carga el archivo al ESP32-CAM (poner el microcontrolador en modo programación antes).
  
@@ -68,7 +70,10 @@ La conversación con el bot luce de la siguiente manera:![](https://github.com/H
 
 [Nodos de Dashboard](https://flows.nodered.org/node/node-red-dashboard)
 
-[Biblioteca PubSubClient](https://github.com/knolleary/pubsubclient) para publicar y recibir mensajes con MQTT.
+[Biblioteca PubSubClient](https://github.com/knolleary/pubsubclient) 
+para publicar y recibir mensajes con MQTT.
+
+[Telegram BotFather](https://telegram.me/BotFather) para crear y gestionar el Bot de Telegram.
 ## Créditos. 
 1. [Hugo Vargas](https://github.com/hugoescalpelo) por proporcionar el código y por su labor de docente para su entendimiento.
 2. [Código IoT](https://github.com/codigo-iot) por gestionar el diplomado.
