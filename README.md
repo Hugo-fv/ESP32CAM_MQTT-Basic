@@ -37,4 +37,4 @@ client.publish("esp32/data", dataString);
 150	client.subscribe("esp32/output");
 ```
 ## Funcionamiento.
-![Hola](https://github.com/Hugo-fv/ESP32CAM_MQTT-Basic/tree/main/Images/DASHBOARD.png.jpg?raw=true)
+![Hola](https://github.com/Hugo-fv/ESP32CAM_MQTT-Basic/tree/main/Images/DASHBOARD.png?raw=true)
