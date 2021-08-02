@@ -38,6 +38,7 @@ client.publish("esp32/data", dataString);
 ```
 ## Funcionamiento.
 ### Programa básico.
+
 Carga el _flow_ a Node-Red.
 ![](https://github.com/Hugo-fv/ESP32CAM_MQTT-Basic/blob/main/Images/FLOW.png)
 Verifica que el Broker está funcionando.
@@ -46,7 +47,7 @@ Compila y carga el archivo al ESP32-CAM (poner el microcontrolador en modo progr
  
 En el _Monitor Serial_ de Arduino IDE, observarás el contador imprimiéndose cada 5 segundos.![](https://github.com/Hugo-fv/ESP32CAM_MQTT-Basic/blob/main/Images/SERIAL.png)
 Despliega el Dashboard. Observarás el contador imprimiéndose y un switch
-![](https://github.com/Hugo-fv/ESP32CAM_MQTT-Basic/blob/main/Images/SERIAL.png)
+![](https://github.com/Hugo-fv/ESP32CAM_MQTT-Basic/blob/main/Images/DASHBOARD.png)
 Con dicho switch puedes encender y apagar el Flash Led, el cual debería haber encendido si la conexión a Internet fue exitosa. 
 
 ### Nodos de Telegram.
@@ -54,23 +55,23 @@ Adicionalmente, he añadido la función de poder encender y apagar el Flash Led 
 Puedes encender el Flash Led del microcontrolador usando el comando _/on_ o la palabra clave _on_; del mismo modo, puedes apagar el Flash Led con el comando _/off_ o la palabra clave _off_. Ambos comandos devolverán el estado en el que quedó el Flash Led. 
 La conversación con el bot luce de la siguiente manera:![](https://github.com/Hugo-fv/ESP32CAM_MQTT-Basic/blob/main/Images/TELEGRAM.png)
 ## Construido con:
-![Eclipse Mosquitto](https://mosquitto.org/) como Broker de MQTT.
+[Eclipse Mosquitto](https://mosquitto.org/) como Broker de MQTT.
 
-![Arduino IDE](https://www.arduino.cc/en/software) como IDE de desarrollo.
+[Arduino IDE](https://www.arduino.cc/en/software) como IDE de desarrollo.
 
-![Biblioteca de espressif](https://github.com/espressif/arduino-esp32) necesaria para programar el ESP32-CAM con la IDE de Arduino.
+[Biblioteca de espressif](https://github.com/espressif/arduino-esp32) necesaria para programar el ESP32-CAM con la IDE de Arduino.
 
-![Node-Red](https://nodered.org/) para cargar el _flow_.
+[Node-Red](https://nodered.org/) para cargar el _flow_.
 
-![Nodos para Telegram](https://flows.nodered.org/node/node-red-contrib-telegrambot)
+[Nodos para Telegram](https://flows.nodered.org/node/node-red-contrib-telegrambot)
 
-![Nodos de Dashboard](https://flows.nodered.org/node/node-red-dashboard)
+[Nodos de Dashboard](https://flows.nodered.org/node/node-red-dashboard)
 
-![Biblioteca PubSubClient](https://github.com/knolleary/pubsubclient) para publicar y recibir mensajes con MQTT.
+[Biblioteca PubSubClient](https://github.com/knolleary/pubsubclient) para publicar y recibir mensajes con MQTT.
 ## Créditos. 
-1. ![Hugo Vargas](https://github.com/hugoescalpelo) por proporcionar el código y por su labor de docente para su entendimiento.
-2. ![Código IoT](https://github.com/codigo-iot) por gestionar el diplomado.
-3. ![Victor Flores](https://github.com/Hugo-fv) por hacer esta documentación y la implementación del bot de Telegram. 
+1. [Hugo Vargas](https://github.com/hugoescalpelo) por proporcionar el código y por su labor de docente para su entendimiento.
+2. [Código IoT](https://github.com/codigo-iot) por gestionar el diplomado.
+3. [Victor Flores](https://github.com/Hugo-fv) por hacer esta documentación y la implementación del bot de Telegram. 
 
 ## Enlaces externos.
 PONER LINK DEL VIDEO. 
