@@ -38,6 +38,7 @@ client.publish("esp32/data", dataString);
 ```
 ## Funcionamiento.
 ### Programa básico.
+Sigue los siguientes pasos para que funcione.
 
 Carga el _flow_ a Node-Red.
 ![](https://github.com/Hugo-fv/ESP32CAM_MQTT-Basic/blob/main/Images/FLOW.png)
