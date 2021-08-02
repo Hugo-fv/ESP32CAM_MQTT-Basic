@@ -1,4 +1,4 @@
-# ESP32CAM con MQTT.
+﻿# ESP32CAM con MQTT.
 Este proyecto incluye el código necesario para conectar el microcontrolador ESP32CAM a través de Internet, para poder conectarse a un broker de MQTT y, eventualmente, enviar y recibir mensajes utilizando dicho broker. Además, se incluye un _flow_ de NodeRed, para proveer una sencilla interfaz visual e implementar un _bot de Telegram_.
 ## Primeros pasos.
 Para poder tener una copia de este proyecto funcionando, se requieren diferentes elementos de software y hardware, los cuales se describen a continuación.
@@ -37,9 +37,15 @@ client.publish("esp32/data", dataString);
 150	client.subscribe("esp32/output");
 ```
 ## Funcionamiento.
-* ![Carga el archivo _flow.json_ en NodeRed y haz un _Deploy_.](https://drive.google.com/file/d/1qOgwqFJZRpUiI8tTKXNtBoc1bU7igSJb/view?usp=sharing "San Juan Mountains")
-* Verifica que el Broker está funcionando.
-* Compila y carga el archivo al ESP32-CAM (poner el microcontrolador en modo programación antes).
-* ![En el _Monitor Serial_ de Arduino IDE, observarás el contador imprimiéndose cada 5 segundos.](https://drive.google.com/file/d/1ULW-w-OrAQwJuX-oDu8WCPKfkv6eqDUi/view?usp=sharing "Monotiro Serial")
-* ![Despliega el Dashboard. Observarás el contador imprimiéndose y un switch](https://drive.google.com/file/d/13_V0KV-2xeHxr8XjT7UerhPa-ogm3uKi/view?usp=sharing "Dashboard")
-	* Con dicho switch puedes encender y apagar el Flash Led, el cual debería haber encendido si la conexión a Internet fue exitosa. ambiar información.
+![Carga el archivo _flow.json_ en NodeRed y haz un _Deploy_.](https://github.com/Hugo-fv/ESP32CAM_MQTT-Basic/blob/main/Images/FLOW.png)
+Verifica que el Broker está funcionando.
+Compila y carga el archivo al ESP32-CAM (poner el microcontrolador en modo programación antes).
+ ![En el _Monitor Serial_ de Arduino IDE, observarás el contador imprimiéndose cada 5 segundos.](https://github.com/Hugo-fv/ESP32CAM_MQTT-Basic/blob/main/Images/SERIAL.png)
+![Despliega el Dashboard. Observarás el contador imprimiéndose y un switch](https://github.com/Hugo-fv/ESP32CAM_MQTT-Basic/blob/main/Images/SERIAL.png)
+Con dicho switch puedes encender y apagar el Flash Led, el cual debería haber encendido si la conexión a Internet fue exitosa. 
+
+ 
+
+
+
+
