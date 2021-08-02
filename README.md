@@ -37,9 +37,4 @@ client.publish("esp32/data", dataString);
 150	client.subscribe("esp32/output");
 ```
 ## Funcionamiento.
-* ![Carga el archivo _flow.json_ en NodeRed y haz un _Deploy_.](https://drive.google.com/file/d/1qOgwqFJZRpUiI8tTKXNtBoc1bU7igSJb/view?usp=sharing "San Juan Mountains")
-* Verifica que el Broker está funcionando.
-* Compila y carga el archivo al ESP32-CAM (poner el microcontrolador en modo programación antes).
-* ![En el _Monitor Serial_ de Arduino IDE, observarás el contador imprimiéndose cada 5 segundos.](https://drive.google.com/file/d/1ULW-w-OrAQwJuX-oDu8WCPKfkv6eqDUi/view?usp=sharing "Monotiro Serial")
-* ![Despliega el Dashboard. Observarás el contador imprimiéndose y un switch](https://drive.google.com/file/d/13_V0KV-2xeHxr8XjT7UerhPa-ogm3uKi/view?usp=sharing "Dashboard")
-	* Con dicho switch puedes encender y apagar el Flash Led, el cual debería haber encendido si la conexión a Internet fue exitosa. ambiar información.
+![Hola](https://github.com/Hugo-fv/ESP32CAM_MQTT-Basic/tree/main/Images/DASHBOARD.png.jpg?raw=true)
