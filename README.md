@@ -1,4 +1,4 @@
-﻿# ESP32CAM con MQTT.
+# ESP32CAM con MQTT.
 Este proyecto incluye el código necesario para conectar el microcontrolador ESP32CAM a través de Internet, para poder conectarse a un broker de MQTT y, eventualmente, enviar y recibir mensajes utilizando dicho broker. Además, se incluye un _flow_ de NodeRed, para proveer una sencilla interfaz visual e implementar un _bot de Telegram_.
 ## Primeros pasos.
 Para poder tener una copia de este proyecto funcionando, se requieren diferentes elementos de software y hardware, los cuales se describen a continuación.
@@ -38,24 +38,34 @@ client.publish("esp32/data", dataString);
 ```
 ## Funcionamiento.
 ### Programa básico.
-![Carga el archivo _flow.json_ en NodeRed y haz un _Deploy_.](https://github.com/Hugo-fv/ESP32CAM_MQTT-Basic/blob/main/Images/FLOW.png)
+Carga el _flow_ a Node-Red.
+![](https://github.com/Hugo-fv/ESP32CAM_MQTT-Basic/blob/main/Images/FLOW.png)
 Verifica que el Broker está funcionando.
+
 Compila y carga el archivo al ESP32-CAM (poner el microcontrolador en modo programación antes).
- ![En el _Monitor Serial_ de Arduino IDE, observarás el contador imprimiéndose cada 5 segundos.](https://github.com/Hugo-fv/ESP32CAM_MQTT-Basic/blob/main/Images/SERIAL.png)
-![Despliega el Dashboard. Observarás el contador imprimiéndose y un switch](https://github.com/Hugo-fv/ESP32CAM_MQTT-Basic/blob/main/Images/SERIAL.png)
+ 
+En el _Monitor Serial_ de Arduino IDE, observarás el contador imprimiéndose cada 5 segundos.![](https://github.com/Hugo-fv/ESP32CAM_MQTT-Basic/blob/main/Images/SERIAL.png)
+Despliega el Dashboard. Observarás el contador imprimiéndose y un switch
+![](https://github.com/Hugo-fv/ESP32CAM_MQTT-Basic/blob/main/Images/SERIAL.png)
 Con dicho switch puedes encender y apagar el Flash Led, el cual debería haber encendido si la conexión a Internet fue exitosa. 
 
 ### Nodos de Telegram.
 Adicionalmente, he añadido la función de poder encender y apagar el Flash Led haciendo uso de un ![Bot de Telegram](t.me/AlertasAtencion_bot). Este bot fue creado utilizando el BotFather (información mas abajo).
 Puedes encender el Flash Led del microcontrolador usando el comando _/on_ o la palabra clave _on_; del mismo modo, puedes apagar el Flash Led con el comando _/off_ o la palabra clave _off_. Ambos comandos devolverán el estado en el que quedó el Flash Led. 
-![La conversación con el bot luce de la siguiente manera:](https://github.com/Hugo-fv/ESP32CAM_MQTT-Basic/blob/main/Images/TELEGRAM.png)
+La conversación con el bot luce de la siguiente manera:![](https://github.com/Hugo-fv/ESP32CAM_MQTT-Basic/blob/main/Images/TELEGRAM.png)
 ## Construido con:
 ![Eclipse Mosquitto](https://mosquitto.org/) como Broker de MQTT.
+
 ![Arduino IDE](https://www.arduino.cc/en/software) como IDE de desarrollo.
+
 ![Biblioteca de espressif](https://github.com/espressif/arduino-esp32) necesaria para programar el ESP32-CAM con la IDE de Arduino.
+
 ![Node-Red](https://nodered.org/) para cargar el _flow_.
-![Nodos para Telegram](https://flows.nodered.org/node/node-red-contrib-telegrambot).
-![Nodos de Dashboard](https://flows.nodered.org/node/node-red-dashboard).
+
+![Nodos para Telegram](https://flows.nodered.org/node/node-red-contrib-telegrambot)
+
+![Nodos de Dashboard](https://flows.nodered.org/node/node-red-dashboard)
+
 ![Biblioteca PubSubClient](https://github.com/knolleary/pubsubclient) para publicar y recibir mensajes con MQTT.
 ## Créditos. 
 1. ![Hugo Vargas](https://github.com/hugoescalpelo) por proporcionar el código y por su labor de docente para su entendimiento.
