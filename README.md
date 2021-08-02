@@ -41,6 +41,7 @@ client.publish("esp32/data", dataString);
 Sigue los siguientes pasos para que funcione.
 
 Carga el _flow_ a Node-Red.
+
 ![](https://github.com/Hugo-fv/ESP32CAM_MQTT-Basic/blob/main/Images/FLOW.png)
 
 Verifica que el Broker está funcionando.
@@ -54,7 +55,7 @@ Despliega el Dashboard. Observarás el contador imprimiéndose y un switch
 Con dicho switch puedes encender y apagar el Flash Led, el cual debería haber encendido si la conexión a Internet fue exitosa. 
 
 ### Nodos de Telegram.
-Adicionalmente, he añadido la función de poder encender y apagar el Flash Led haciendo uso de un ![Bot de Telegram](t.me/AlertasAtencion_bot). Este bot fue creado utilizando el BotFather (información mas abajo).
+Adicionalmente, he añadido la función de poder encender y apagar el Flash Led haciendo uso de un [Bot de Telegram](t.me/AlertasAtencion_bot). Este bot fue creado utilizando el BotFather (información mas abajo).
 Puedes encender el Flash Led del microcontrolador usando el comando _/on_ o la palabra clave _on_; del mismo modo, puedes apagar el Flash Led con el comando _/off_ o la palabra clave _off_. Ambos comandos devolverán el estado en el que quedó el Flash Led. 
 La conversación con el bot luce de la siguiente manera:![](https://github.com/Hugo-fv/ESP32CAM_MQTT-Basic/blob/main/Images/TELEGRAM.png)
 ## Construido con:
